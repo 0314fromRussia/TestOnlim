@@ -14,6 +14,9 @@
 		F1811889270A6BB200D11B88 /* TestOnlim.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1811887270A6BB200D11B88 /* TestOnlim.xcdatamodeld */; };
 		F181188B270A6BBB00D11B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F181188A270A6BBB00D11B88 /* Assets.xcassets */; };
 		F181188E270A6BBB00D11B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F181188C270A6BBB00D11B88 /* LaunchScreen.storyboard */; };
+		F1811898270A6D1100D11B88 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1811897270A6D1100D11B88 /* MainModel.swift */; };
+		F181189B270A6D3100D11B88 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F181189A270A6D3100D11B88 /* ArticleModel.swift */; };
+		F181189E270A6D4600D11B88 /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F181189D270A6D4600D11B88 /* BannerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		F181188A270A6BBB00D11B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F181188D270A6BBB00D11B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F181188F270A6BBB00D11B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1811897270A6D1100D11B88 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		F181189A270A6D3100D11B88 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		F181189D270A6D4600D11B88 /* BannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			children = (
 				F181187E270A6BB200D11B88 /* AppDelegate.swift */,
 				F1811880270A6BB200D11B88 /* SceneDelegate.swift */,
+				F1811896270A6CDD00D11B88 /* Model */,
 				F1811882270A6BB200D11B88 /* ViewController.swift */,
 				F1811884270A6BB200D11B88 /* Main.storyboard */,
 				F181188A270A6BBB00D11B88 /* Assets.xcassets */,
@@ -68,6 +75,16 @@
 				F1811887270A6BB200D11B88 /* TestOnlim.xcdatamodeld */,
 			);
 			path = TestOnlim;
+			sourceTree = "<group>";
+		};
+		F1811896270A6CDD00D11B88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1811897270A6D1100D11B88 /* MainModel.swift */,
+				F181189D270A6D4600D11B88 /* BannerModel.swift */,
+				F181189A270A6D3100D11B88 /* ArticleModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +159,10 @@
 			files = (
 				F1811883270A6BB200D11B88 /* ViewController.swift in Sources */,
 				F1811889270A6BB200D11B88 /* TestOnlim.xcdatamodeld in Sources */,
+				F181189E270A6D4600D11B88 /* BannerModel.swift in Sources */,
 				F181187F270A6BB200D11B88 /* AppDelegate.swift in Sources */,
+				F1811898270A6D1100D11B88 /* MainModel.swift in Sources */,
+				F181189B270A6D3100D11B88 /* ArticleModel.swift in Sources */,
 				F1811881270A6BB200D11B88 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct ArticleModel: Codable {
+    let title: String
+    let text: String
+}

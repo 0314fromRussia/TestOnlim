@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct MainModel: Codable {
+    var banners: [BannerModel]
+    var articles: [ArticleModel]
+}

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+//Equatable нужен для операции сравнения
+struct BannerModel: Codable, Equatable {
+    var name: String
+    var color: String
+    var active: Bool
+}

@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-class ArticleDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var articles: [ArticleModel]?
     

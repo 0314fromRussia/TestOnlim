@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewBannerViewController: UIViewController {
+class AddBannerViewController: UIViewController {
     
     //через эту переменную передаем модель в прошлый VC
     var closedNewBanner: ((BannerModel, Int) -> Void)?

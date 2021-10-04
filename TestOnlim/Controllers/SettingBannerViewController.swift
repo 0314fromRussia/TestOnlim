@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BannerSettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SettingBannerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var banners: [BannerModel]?
     
@@ -39,7 +39,7 @@ class BannerSettingsViewController: UIViewController, UITableViewDelegate, UITab
     
     @objc func addButtonTapped() {
         
-        let newBanner = NewBannerViewController()
+        let newBanner = AddBannerViewController()
         newBanner.modalPresentationStyle = .formSheet
         navigationController?.present(UINavigationController(rootViewController: newBanner), animated: true)
         

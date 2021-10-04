@@ -5,11 +5,10 @@
 //  Created by Никита Дмитриев on 04.10.2021.
 //
 
-import UIKit
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     var urlMain: String = "https://onlym.ru/api_test/test.json"
     
@@ -170,7 +169,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @objc func settingsNavigationBar() {
         
-        let settingsViewController = BannerSettingsViewController()
+        let settingsViewController = SettingBannerViewController()
         //modalPresentationStyle - переход модально
         settingsViewController.modalPresentationStyle = .formSheet
         
@@ -194,7 +193,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @objc func addNavigationBar() {
-        let newBannerViewController = NewBannerViewController()
+        let newBannerViewController = AddBannerViewController()
         //modalPresentationStyle - переход модально
         newBannerViewController.modalPresentationStyle = .formSheet
         navigationController?.present(UINavigationController(rootViewController: newBannerViewController), animated: true)
@@ -266,7 +265,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //переход по нажатию на статью
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let articleVC = ArticleDetailViewController()
+        let articleVC = ArticleViewController()
         guard let article = mainModel?.articles[indexPath.row] else { return}
         articleVC.setData(article: article, articles: mainModel!.articles, indexPath: indexPath)
         navigationController?.pushViewController(articleVC, animated: true)
